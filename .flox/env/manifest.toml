@@ -1,0 +1,13 @@
+version = 1
+
+[include]
+environments = [
+  { remote = "zmitchell/zig" }
+]
+
+[build.zine]
+command = '''
+  zig build -Doptimize=ReleaseFast --prefix $out
+'''
+description = "Fast, Scalable, Flexible Static Site Generator (SSG)"
+version = "0.11.2"

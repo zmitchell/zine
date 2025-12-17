@@ -1,0 +1,264 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "zig": {
+        "pkg-path": "zig",
+        "version": "0.15.2"
+      },
+      "zls": {
+        "pkg-path": "zls"
+      }
+    },
+    "hook": {
+      "on-activate": "  export PATH=\"$PWD/zig-out/bin:$PATH\"\n"
+    },
+    "profile": {
+      "fish": "  abbr wb \"zig build --watch -fincremental -Dno_install=true\"\n"
+    },
+    "options": {
+      "systems": [
+        "x86_64-linux",
+        "aarch64-linux",
+        "aarch64-darwin"
+      ]
+    },
+    "build": {
+      "zine": {
+        "command": "  zig build -Doptimize=ReleaseFast --prefix $out\n"
+      }
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "zig",
+      "broken": false,
+      "derivation": "/nix/store/xryw21p4vg7fn53p3m89zxhkj0rv3l3q-zig-0.15.2.drv",
+      "description": "General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software",
+      "install_id": "zig",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "name": "zig-0.15.2",
+      "pname": "zig",
+      "rev": "1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "rev_count": 912002,
+      "rev_date": "2025-12-15T06:20:37Z",
+      "scrape_date": "2025-12-16T03:04:12.234962Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/pkr2y19zac7gls2mr5fjwkxr9kbj632h-zig-0.15.2-doc",
+        "out": "/nix/store/h5zqw1lr8i0pwqpkkl3lbid06f9dprw0-zig-0.15.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zig",
+      "broken": false,
+      "derivation": "/nix/store/7hgm9h9clrc2ybqj6d8g4947h6cky910-zig-0.15.2.drv",
+      "description": "General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software",
+      "install_id": "zig",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "name": "zig-0.15.2",
+      "pname": "zig",
+      "rev": "1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "rev_count": 912002,
+      "rev_date": "2025-12-15T06:20:37Z",
+      "scrape_date": "2025-12-16T03:21:11.272202Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/j22h1s5gc972wvsqzqj0m5vzrcqkd676-zig-0.15.2-doc",
+        "out": "/nix/store/qn6da3g7qdwdxd2csdm1aj25zilkcl30-zig-0.15.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zig",
+      "broken": false,
+      "derivation": "/nix/store/x4ay63239zakini4m1zy8ax5mwsvza5a-zig-0.15.2.drv",
+      "description": "General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software",
+      "install_id": "zig",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "name": "zig-0.15.2",
+      "pname": "zig",
+      "rev": "1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "rev_count": 912002,
+      "rev_date": "2025-12-15T06:20:37Z",
+      "scrape_date": "2025-12-16T03:53:42.739989Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/vssw4zdhhvjlgmjkxwws8q8vz7fyxd92-zig-0.15.2-doc",
+        "out": "/nix/store/iyv5lnq9cwlsixg357zv8zcp4pv2q7ml-zig-0.15.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zls",
+      "broken": false,
+      "derivation": "/nix/store/pfncjhm2fylypdwjg30arnzdk2cykjak-zls-0.15.1.drv",
+      "description": "Zig LSP implementation + Zig Language Server",
+      "install_id": "zls",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "name": "zls-0.15.1",
+      "pname": "zls",
+      "rev": "1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "rev_count": 912002,
+      "rev_date": "2025-12-15T06:20:37Z",
+      "scrape_date": "2025-12-16T03:04:12.394348Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/vvk31xmhx5lnfzc714hws0kcd52cx9vg-zls-0.15.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zls",
+      "broken": false,
+      "derivation": "/nix/store/4i9c22fvlx42lcahck8cdwhxx9nxrx8c-zls-0.15.1.drv",
+      "description": "Zig LSP implementation + Zig Language Server",
+      "install_id": "zls",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "name": "zls-0.15.1",
+      "pname": "zls",
+      "rev": "1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "rev_count": 912002,
+      "rev_date": "2025-12-15T06:20:37Z",
+      "scrape_date": "2025-12-16T03:21:11.497488Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/idfhh2y6b1icfvrvql9sf8fqdp81mjbg-zls-0.15.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zls",
+      "broken": false,
+      "derivation": "/nix/store/7fx3ar5phiwizgcs36m2gl2zf5pvf2d7-zls-0.15.1.drv",
+      "description": "Zig LSP implementation + Zig Language Server",
+      "install_id": "zls",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "name": "zls-0.15.1",
+      "pname": "zls",
+      "rev": "1306659b587dc277866c7b69eb97e5f07864d8c4",
+      "rev_count": 912002,
+      "rev_date": "2025-12-15T06:20:37Z",
+      "scrape_date": "2025-12-16T03:53:42.965742Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/slw3b2fp374f0kgdrcc6q20n99c2id40-zls-0.15.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ],
+  "compose": {
+    "composer": {
+      "version": 1,
+      "options": {},
+      "build": {
+        "zine": {
+          "command": "  zig build -Doptimize=ReleaseFast --prefix $out\n"
+        }
+      },
+      "include": {
+        "environments": [
+          {
+            "remote": "zmitchell/zig"
+          }
+        ]
+      }
+    },
+    "include": [
+      {
+        "manifest": {
+          "version": 1,
+          "install": {
+            "zig": {
+              "pkg-path": "zig",
+              "version": "0.15.2"
+            },
+            "zls": {
+              "pkg-path": "zls"
+            }
+          },
+          "hook": {
+            "on-activate": "  export PATH=\"$PWD/zig-out/bin:$PATH\"\n"
+          },
+          "profile": {
+            "fish": "  abbr wb \"zig build --watch -fincremental -Dno_install=true\"\n"
+          },
+          "options": {
+            "systems": [
+              "x86_64-linux",
+              "aarch64-linux",
+              "aarch64-darwin"
+            ]
+          }
+        },
+        "name": "zig",
+        "descriptor": {
+          "remote": "zmitchell/zig"
+        }
+      }
+    ],
+    "warnings": []
+  }
+}

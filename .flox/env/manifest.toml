@@ -11,3 +11,4 @@ command = '''
 '''
 description = "Fast, Scalable, Flexible Static Site Generator (SSG)"
 version = "0.11.2"
+runtime-packages = []
